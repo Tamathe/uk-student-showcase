@@ -48,22 +48,31 @@ Open `index.html` in any text editor and use **Find & Replace** (Ctrl+H / Cmd+H)
 |----------------------|---------------------------------------|----------------------------|
 | `HOBBY_NAME`         | The hobby/interest the org is built around | `Rock Climbing`       |
 
-### Step 3: Activities (What We Do cards)
+### Step 3: President / Leadership
+
+| Find This             | Replace With                              | Example                          |
+|-----------------------|-------------------------------------------|----------------------------------|
+| `PRESIDENT_NAME`      | President's full name                     | `Alex Johnson`                   |
+| `PRESIDENT_MAJOR`     | President's major                         | `Kinesiology`                    |
+| `PRESIDENT_YEAR`      | President's class year                    | `Senior`                         |
+| `PRESIDENT_HOMETOWN`  | President's hometown                      | `Lexington, KY`                  |
+| `PRESIDENT_BIO`       | 2-3 sentence bio about the president      | `Alex has led the club since…`   |
+| `PRESIDENT_QUOTE`     | A quote from the president about the org  | `This club changed my life…`     |
+
+**President photo:**
+- Replace `<div class="president-photo-placeholder">…</div>` with:
+  ```html
+  <img src="images/president.jpg" alt="PRESIDENT_NAME">
+  ```
+
+### Step 4: Activities (What We Do cards)
 
 | Find This                    | Replace With                           | Example                          |
 |------------------------------|----------------------------------------|----------------------------------|
 | `ACTIVITY_1` through `_4`   | Activity/focus area titles             | `Weekly Climbs`, `Competitions`… |
 | `ACTIVITY_DESC_1` – `_4`    | Activity descriptions                  | `We meet every Tuesday at…`      |
 
-### Step 4: Timeline Milestones
-
-| Find This                         | Replace With                  | Example                        |
-|-----------------------------------|-------------------------------|--------------------------------|
-| `YEAR_OR_DATE_1` – `_4`          | Dates/years                   | `2019`, `Fall 2022`            |
-| `MILESTONE_TITLE_1` – `_5`       | Milestone names               | `Club Founded`                 |
-| `MILESTONE_DESCRIPTION_1` – `_5` | Milestone details             | `Started with 5 members…`      |
-
-### Step 5: Statistics
+### Step 5: Statistics (By the Numbers)
 
 | Find This                      | Replace With                   | Example                          |
 |--------------------------------|--------------------------------|----------------------------------|
@@ -116,7 +125,23 @@ To add actual images:
 | `PLATFORM_NAME`          | Platform name                  | `Discord`                            |
 | `PLATFORM_HANDLE`        | Handle/username                | `UK Climbing Club`                   |
 
-### Step 10: Photos
+### Step 10: Logo & Animated Video
+
+**Organization logo (displayed prominently in the hero):**
+- Replace `<div class="hero-logo-placeholder">…</div>` with:
+  ```html
+  <img src="images/org-logo.png" alt="ORG_NAME logo">
+  ```
+
+**Animated logo video (displayed below the hero CTA buttons):**
+- Replace `<div class="hero-video-placeholder">…</div>` with:
+  ```html
+  <video autoplay muted loop playsinline>
+      <source src="images/logo-animation.mp4" type="video/mp4">
+  </video>
+  ```
+
+### Step 11: Photos
 
 **Hero background:**
 - Option A (image): Uncomment the `<img>` tag in the hero section and set `src`
@@ -135,7 +160,6 @@ To add actual images:
 Each section is self-contained in the HTML. To:
 - **Remove a section:** Delete everything between its opening `<!-- === SECTION NAME -->` comment and the closing `</section>` tag
 - **Add activity cards:** Copy an existing `.hobby-card` div and modify
-- **Add timeline items:** Copy an existing `.timeline-item` div and modify
 - **Add gallery images:** Copy an existing `.gallery-item` div and modify
 - **Add/remove stats:** Copy or delete `.stat-card` divs
 

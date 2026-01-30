@@ -32,8 +32,8 @@
             </button>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About Us</a></li>
+                <li><a href="#president">Leadership</a></li>
                 <li><a href="#hobby"><!-- CUSTOMIZE: Section label --> What We Do</a></li>
-                <li><a href="#timeline">Our History</a></li>
                 <li><a href="#stats">By the Numbers</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact" class="nav-cta">Join Us</a></li>
@@ -55,6 +55,13 @@
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
+            <!-- CUSTOMIZE: Organization logo — replace src with your logo image file -->
+            <div class="hero-logo animate-on-scroll">
+                <div class="hero-logo-placeholder">
+                    <!-- Replace this div with: <img src="images/org-logo.png" alt="ORG_NAME logo"> -->
+                    <span class="placeholder-text">Logo<br>Here</span>
+                </div>
+            </div>
             <div class="hero-badge animate-on-scroll">
                 <!-- CUSTOMIZE: Badge text -->
                 University of Kentucky Student Organization
@@ -71,6 +78,18 @@
             <div class="hero-actions animate-on-scroll">
                 <a href="#hobby" class="btn btn-primary">Discover What We Do</a>
                 <a href="#contact" class="btn btn-outline">Get Involved</a>
+            </div>
+
+            <!-- CUSTOMIZE: Animated logo video — replace src with your video file -->
+            <div class="hero-video animate-on-scroll">
+                <div class="hero-video-placeholder">
+                    <!-- Replace this div with:
+                    <video autoplay muted loop playsinline>
+                        <source src="images/logo-animation.mp4" type="video/mp4">
+                    </video>
+                    -->
+                    <span class="placeholder-text">Animated<br>Logo Video</span>
+                </div>
             </div>
         </div>
         <!-- Decorative scroll indicator -->
@@ -146,6 +165,48 @@
     </section>
 
     <!-- =====================================================================
+         PRESIDENT / LEADERSHIP SPOTLIGHT
+         Prominent section showcasing the organization's president.
+         CUSTOMIZE: Photo, name, major, year, quote, and bio.
+         ===================================================================== -->
+    <section class="section president-section" id="president">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-label">Leadership</span>
+                <h2 class="section-title">Meet Our <span class="highlight">President</span></h2>
+            </div>
+            <div class="president-card animate-on-scroll">
+                <div class="president-photo">
+                    <!-- CUSTOMIZE: Replace with president's photo -->
+                    <div class="president-photo-placeholder">
+                        <!-- Replace this div with: <img src="images/president.jpg" alt="PRESIDENT_NAME"> -->
+                        <span class="placeholder-text">President<br>Photo</span>
+                    </div>
+                </div>
+                <div class="president-info">
+                    <h3 class="president-name">PRESIDENT_NAME</h3>
+                    <p class="president-title">President, ORG_NAME</p>
+                    <div class="president-details">
+                        <!-- CUSTOMIZE: Update president details -->
+                        <span class="president-detail">🎓 PRESIDENT_MAJOR</span>
+                        <span class="president-detail">⭐ PRESIDENT_YEAR</span>
+                        <span class="president-detail">📍 PRESIDENT_HOMETOWN</span>
+                    </div>
+                    <p class="president-bio">
+                        <!-- CUSTOMIZE: 2-3 sentence bio about the president -->
+                        PRESIDENT_BIO — describe who they are, why they lead this organization,
+                        and what their vision is for the group's future at UK.
+                    </p>
+                    <blockquote class="president-quote">
+                        <!-- CUSTOMIZE: A quote from the president about the org -->
+                        &ldquo;PRESIDENT_QUOTE&rdquo;
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
          WHAT WE DO / ACTIVITIES SECTION
          Highlight the organization's activities and focus areas.
          CUSTOMIZE: Activity names, descriptions, icons, card content.
@@ -193,74 +254,6 @@
                     <div class="card-icon">🤝</div>
                     <h3>ACTIVITY_4</h3>
                     <p>ACTIVITY_DESC_4 — community outreach, social events, or campus collaborations.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- =====================================================================
-         TIMELINE SECTION
-         A vertical timeline showing the organization's history and milestones.
-         CUSTOMIZE: Dates, event titles, and descriptions.
-         ===================================================================== -->
-    <section class="section timeline-section" id="timeline">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-label">Our History</span>
-                <h2 class="section-title">How We <span class="highlight">Got Here</span></h2>
-                <p class="section-subtitle">
-                    <!-- CUSTOMIZE: Brief intro about the organization's history -->
-                    The milestones that shaped ORG_NAME into the thriving community it is today.
-                </p>
-            </div>
-
-            <div class="timeline">
-                <!-- CUSTOMIZE: Each timeline-item represents a milestone.
-                     Add or remove items. Alternate left/right automatically via CSS. -->
-
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">YEAR_OR_DATE_1</span>
-                        <h3>MILESTONE_TITLE_1</h3>
-                        <p>MILESTONE_DESCRIPTION_1 — the founding of the organization or the idea that started it all.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">YEAR_OR_DATE_2</span>
-                        <h3>MILESTONE_TITLE_2</h3>
-                        <p>MILESTONE_DESCRIPTION_2 — a key turning point, first major event, or growth moment.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">YEAR_OR_DATE_3</span>
-                        <h3>MILESTONE_TITLE_3</h3>
-                        <p>MILESTONE_DESCRIPTION_3 — an achievement, partnership, or campus recognition.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">YEAR_OR_DATE_4</span>
-                        <h3>MILESTONE_TITLE_4</h3>
-                        <p>MILESTONE_DESCRIPTION_4 — recent accomplishment or expansion of the organization.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Present</span>
-                        <h3>MILESTONE_TITLE_5</h3>
-                        <p>MILESTONE_DESCRIPTION_5 — where the organization stands today and what's coming next.</p>
-                    </div>
                 </div>
             </div>
         </div>

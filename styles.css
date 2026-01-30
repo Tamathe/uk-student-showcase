@@ -490,6 +490,239 @@ a:hover {
 }
 
 /* ================================
+   HERO LOGO & ANIMATED VIDEO
+   ================================ */
+.hero-logo {
+    margin-bottom: 2rem;
+}
+
+.hero-logo-placeholder,
+.hero-logo img {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+    transition: transform var(--transition-medium);
+}
+
+.hero-logo img {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.hero-logo-placeholder:hover,
+.hero-logo img:hover {
+    transform: scale(1.08);
+}
+
+.hero-logo-placeholder .placeholder-text {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+
+.hero-video {
+    margin-top: 2.5rem;
+}
+
+.hero-video-placeholder,
+.hero-video video {
+    width: 320px;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.hero-video video {
+    width: 320px;
+    height: 180px;
+    display: block;
+}
+
+.hero-video-placeholder .placeholder-text {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+
+/* ================================
+   PRESIDENT / LEADERSHIP SECTION
+   ================================ */
+.president-section {
+    background: var(--uk-white);
+}
+
+.president-card {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 3.5rem;
+    align-items: center;
+    max-width: 950px;
+    margin: 0 auto;
+    background: var(--uk-white);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--gray-200);
+    padding: 3rem;
+    box-shadow: 0 10px 40px rgba(0, 51, 160, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative blue accent bar at the top of the card */
+.president-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--uk-blue), var(--uk-accent));
+}
+
+.president-photo-placeholder,
+.president-photo img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    background: linear-gradient(135deg, var(--uk-blue-10), var(--uk-blue-20));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(0, 51, 160, 0.12);
+}
+
+.president-photo-placeholder .placeholder-text {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--uk-blue-30);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+.president-name {
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    color: var(--gray-900);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
+}
+
+.president-title {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--uk-blue);
+    margin-bottom: 1.25rem;
+}
+
+.president-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.president-detail {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    background: var(--gray-50);
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+    border: 1px solid var(--gray-200);
+}
+
+.president-bio {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--gray-600);
+    margin-bottom: 1.5rem;
+}
+
+.president-quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--gray-700);
+    line-height: 1.7;
+    padding: 1.25rem 1.5rem;
+    background: var(--uk-blue-10);
+    border-left: 4px solid var(--uk-blue);
+    border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+    margin: 0;
+}
+
+/* Responsive president section */
+@media (max-width: 768px) {
+    .president-card {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .president-photo-placeholder,
+    .president-photo img {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .president-details {
+        justify-content: center;
+    }
+
+    .president-name,
+    .president-title {
+        text-align: center;
+    }
+
+    .hero-logo-placeholder,
+    .hero-logo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hero-video-placeholder,
+    .hero-video video {
+        width: 260px;
+        height: 146px;
+    }
+}
+
+/* ================================
    BUTTONS
    ================================ */
 .btn {
