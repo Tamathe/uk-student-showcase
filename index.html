@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><!-- CUSTOMIZE: Page Title --> PERSON_NAME — UK Student Showcase</title>
-    <meta name="description" content="<!-- CUSTOMIZE: Meta description --> A showcase of PERSON_NAME and their passion for HOBBY_NAME at the University of Kentucky.">
+    <title><!-- CUSTOMIZE: Page Title --> ORG_NAME — UK Student Organization</title>
+    <meta name="description" content="<!-- CUSTOMIZE: Meta description --> ORG_NAME is a University of Kentucky student organization dedicated to HOBBY_NAME.">
 
     <!-- Google Fonts — close match to UK brand typography (Usual / Alt Trade Gothic) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,28 +23,28 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
-                <!-- CUSTOMIZE: Replace with person's initials or short name -->
+                <!-- CUSTOMIZE: Replace with organization's abbreviation or short name -->
                 <span class="logo-icon">UK</span>
-                <span class="logo-text">PERSON_NAME</span>
+                <span class="logo-text">ORG_NAME</span>
             </a>
             <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#hobby"><!-- CUSTOMIZE: Section label --> My Passion</a></li>
-                <li><a href="#timeline">Journey</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#hobby"><!-- CUSTOMIZE: Section label --> What We Do</a></li>
+                <li><a href="#timeline">Our History</a></li>
                 <li><a href="#stats">By the Numbers</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact" class="nav-cta">Connect</a></li>
+                <li><a href="#contact" class="nav-cta">Join Us</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- =====================================================================
          HERO SECTION
-         Full-viewport hero with photo, headline, and call-to-action.
-         CUSTOMIZE: Background image, name, tagline, hobby.
+         Full-viewport hero with headline and call-to-action.
+         CUSTOMIZE: Background image, organization name, tagline.
          ===================================================================== -->
     <section class="hero" id="hero">
         <div class="hero-bg">
@@ -57,20 +57,20 @@
         <div class="hero-content">
             <div class="hero-badge animate-on-scroll">
                 <!-- CUSTOMIZE: Badge text -->
-                University of Kentucky
+                University of Kentucky Student Organization
             </div>
             <h1 class="hero-title animate-on-scroll">
-                <!-- CUSTOMIZE: Person's full name -->
-                <span class="hero-greeting">Meet</span>
-                <span class="hero-name">PERSON_NAME</span>
+                <!-- CUSTOMIZE: Organization name -->
+                <span class="hero-greeting">Welcome to</span>
+                <span class="hero-name">ORG_NAME</span>
             </h1>
             <p class="hero-subtitle animate-on-scroll">
-                <!-- CUSTOMIZE: One-line description combining person + hobby -->
-                MAJOR_OR_ROLE &bull; Passionate HOBBY_NAME Enthusiast
+                <!-- CUSTOMIZE: One-line description of the organization and its focus -->
+                UK's Premier Student Organization for HOBBY_NAME Enthusiasts
             </p>
             <div class="hero-actions animate-on-scroll">
-                <a href="#hobby" class="btn btn-primary">Explore My Passion</a>
-                <a href="#about" class="btn btn-outline">Learn More</a>
+                <a href="#hobby" class="btn btn-primary">Discover What We Do</a>
+                <a href="#contact" class="btn btn-outline">Get Involved</a>
             </div>
         </div>
         <!-- Decorative scroll indicator -->
@@ -80,63 +80,63 @@
     </section>
 
     <!-- =====================================================================
-         ABOUT / BIOGRAPHY SECTION
-         Short bio with photo and quick facts.
-         CUSTOMIZE: Photo, bio text, quick-fact items.
+         ABOUT SECTION
+         Organization overview with group photo and quick facts.
+         CUSTOMIZE: Photo, description text, quick-fact items.
          ===================================================================== -->
     <section class="section about" id="about">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <span class="section-label">Get to Know Me</span>
-                <h2 class="section-title">About <span class="highlight">PERSON_NAME</span></h2>
+                <span class="section-label">Who We Are</span>
+                <h2 class="section-title">About <span class="highlight">ORG_NAME</span></h2>
             </div>
             <div class="about-grid">
                 <div class="about-photo animate-on-scroll">
-                    <!-- CUSTOMIZE: Replace with actual portrait photo -->
+                    <!-- CUSTOMIZE: Replace with actual group/organization photo -->
                     <div class="photo-frame">
                         <div class="photo-placeholder">
-                            <!-- Replace this div with: <img src="images/portrait.jpg" alt="PERSON_NAME"> -->
-                            <span class="placeholder-text">Photo<br>Here</span>
+                            <!-- Replace this div with: <img src="images/group-photo.jpg" alt="ORG_NAME members"> -->
+                            <span class="placeholder-text">Group<br>Photo</span>
                         </div>
                         <div class="photo-accent"></div>
                     </div>
                 </div>
                 <div class="about-content animate-on-scroll">
                     <p class="about-bio">
-                        <!-- CUSTOMIZE: 2-3 sentence biography -->
-                        PERSON_NAME is a YEAR_IN_SCHOOL at the University of Kentucky, majoring in MAJOR_FIELD.
-                        With a deep passion for HOBBY_NAME, they have BRIEF_ACHIEVEMENT_OR_DESCRIPTION.
-                        When not studying, you'll find them HOBBY_ACTIVITY_DESCRIPTION.
+                        <!-- CUSTOMIZE: 2-3 sentence organization description -->
+                        ORG_NAME is a registered student organization at the University of Kentucky
+                        dedicated to bringing together students who share a passion for HOBBY_NAME.
+                        ORG_DESCRIPTION — describe what the organization does, its mission, and what
+                        makes it a valuable part of campus life.
                     </p>
                     <div class="quick-facts">
                         <!-- CUSTOMIZE: Update each fact. Add or remove items as needed. -->
                         <div class="fact-item">
-                            <span class="fact-icon">🎓</span>
+                            <span class="fact-icon">📅</span>
                             <div>
-                                <strong>Major</strong>
-                                <span>MAJOR_FIELD</span>
+                                <strong>Founded</strong>
+                                <span>YEAR_FOUNDED</span>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-icon">👥</span>
+                            <div>
+                                <strong>Members</strong>
+                                <span>MEMBER_COUNT active members</span>
                             </div>
                         </div>
                         <div class="fact-item">
                             <span class="fact-icon">📍</span>
                             <div>
-                                <strong>Hometown</strong>
-                                <span>HOMETOWN_CITY, STATE</span>
+                                <strong>Meeting Place</strong>
+                                <span>MEETING_LOCATION</span>
                             </div>
                         </div>
                         <div class="fact-item">
-                            <span class="fact-icon">⭐</span>
+                            <span class="fact-icon">🗓️</span>
                             <div>
-                                <strong>Year</strong>
-                                <span>YEAR_IN_SCHOOL</span>
-                            </div>
-                        </div>
-                        <div class="fact-item">
-                            <span class="fact-icon">💙</span>
-                            <div>
-                                <!-- CUSTOMIZE: Hobby icon and label -->
-                                <strong>Passion</strong>
-                                <span>HOBBY_NAME</span>
+                                <strong>Meetings</strong>
+                                <span>MEETING_SCHEDULE</span>
                             </div>
                         </div>
                     </div>
@@ -146,25 +146,25 @@
     </section>
 
     <!-- =====================================================================
-         HOBBY SHOWCASE SECTION
-         Highlight the person's hobby/interest with feature cards.
-         CUSTOMIZE: Hobby name, descriptions, images, card content.
+         WHAT WE DO / ACTIVITIES SECTION
+         Highlight the organization's activities and focus areas.
+         CUSTOMIZE: Activity names, descriptions, icons, card content.
          ===================================================================== -->
     <section class="section hobby" id="hobby">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <span class="section-label">What Drives Me</span>
+                <span class="section-label">What We Do</span>
                 <!-- CUSTOMIZE: Replace HOBBY_NAME -->
-                <h2 class="section-title">My Love for <span class="highlight">HOBBY_NAME</span></h2>
+                <h2 class="section-title">Our Passion for <span class="highlight">HOBBY_NAME</span></h2>
                 <p class="section-subtitle">
-                    <!-- CUSTOMIZE: 1-2 sentence intro about their hobby -->
-                    HOBBY_INTRO_PARAGRAPH — a brief description of what this hobby means to the person
-                    and why it's an important part of their life at UK.
+                    <!-- CUSTOMIZE: 1-2 sentence intro about the organization's activities -->
+                    ORG_MISSION_STATEMENT — a brief description of the organization's purpose
+                    and what members experience as part of the group at UK.
                 </p>
             </div>
 
             <div class="hobby-grid">
-                <!-- CUSTOMIZE: Each card represents an aspect of the hobby.
+                <!-- CUSTOMIZE: Each card represents an activity or focus area.
                      Change icons, titles, and descriptions.
                      Add or remove cards as needed (recommended: 3-6 cards). -->
 
@@ -173,44 +173,44 @@
                         <!-- CUSTOMIZE: Use an emoji or SVG icon -->
                         🎯
                     </div>
-                    <h3>HOBBY_ASPECT_1</h3>
-                    <p>DESCRIPTION_OF_ASPECT_1 — explain what this part of the hobby involves and why it matters.</p>
+                    <h3>ACTIVITY_1</h3>
+                    <p>ACTIVITY_DESC_1 — describe this activity, event type, or focus area and why members enjoy it.</p>
                 </div>
 
                 <div class="hobby-card animate-on-scroll">
                     <div class="card-icon">🏆</div>
-                    <h3>HOBBY_ASPECT_2</h3>
-                    <p>DESCRIPTION_OF_ASPECT_2 — another dimension of their passion or a specific achievement.</p>
+                    <h3>ACTIVITY_2</h3>
+                    <p>ACTIVITY_DESC_2 — competitions, showcases, or achievements the organization participates in.</p>
                 </div>
 
                 <div class="hobby-card animate-on-scroll">
                     <div class="card-icon">🌟</div>
-                    <h3>HOBBY_ASPECT_3</h3>
-                    <p>DESCRIPTION_OF_ASPECT_3 — what makes their approach unique or noteworthy.</p>
+                    <h3>ACTIVITY_3</h3>
+                    <p>ACTIVITY_DESC_3 — workshops, skill-building sessions, or educational programming.</p>
                 </div>
 
                 <div class="hobby-card animate-on-scroll">
                     <div class="card-icon">🤝</div>
-                    <h3>HOBBY_ASPECT_4</h3>
-                    <p>DESCRIPTION_OF_ASPECT_4 — community involvement, group activities, or social aspects.</p>
+                    <h3>ACTIVITY_4</h3>
+                    <p>ACTIVITY_DESC_4 — community outreach, social events, or campus collaborations.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- =====================================================================
-         INTERACTIVE TIMELINE SECTION
-         A vertical timeline showing the person's journey with their hobby.
+         TIMELINE SECTION
+         A vertical timeline showing the organization's history and milestones.
          CUSTOMIZE: Dates, event titles, and descriptions.
          ===================================================================== -->
     <section class="section timeline-section" id="timeline">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <span class="section-label">My Journey</span>
-                <h2 class="section-title">How It <span class="highlight">Started</span></h2>
+                <span class="section-label">Our History</span>
+                <h2 class="section-title">How We <span class="highlight">Got Here</span></h2>
                 <p class="section-subtitle">
-                    <!-- CUSTOMIZE: Brief intro about their journey -->
-                    A look at the milestones that shaped PERSON_NAME's path with HOBBY_NAME.
+                    <!-- CUSTOMIZE: Brief intro about the organization's history -->
+                    The milestones that shaped ORG_NAME into the thriving community it is today.
                 </p>
             </div>
 
@@ -223,7 +223,7 @@
                     <div class="timeline-content">
                         <span class="timeline-date">YEAR_OR_DATE_1</span>
                         <h3>MILESTONE_TITLE_1</h3>
-                        <p>MILESTONE_DESCRIPTION_1 — the beginning of their journey or first introduction to the hobby.</p>
+                        <p>MILESTONE_DESCRIPTION_1 — the founding of the organization or the idea that started it all.</p>
                     </div>
                 </div>
 
@@ -232,7 +232,7 @@
                     <div class="timeline-content">
                         <span class="timeline-date">YEAR_OR_DATE_2</span>
                         <h3>MILESTONE_TITLE_2</h3>
-                        <p>MILESTONE_DESCRIPTION_2 — a key turning point or achievement.</p>
+                        <p>MILESTONE_DESCRIPTION_2 — a key turning point, first major event, or growth moment.</p>
                     </div>
                 </div>
 
@@ -241,7 +241,7 @@
                     <div class="timeline-content">
                         <span class="timeline-date">YEAR_OR_DATE_3</span>
                         <h3>MILESTONE_TITLE_3</h3>
-                        <p>MILESTONE_DESCRIPTION_3 — arriving at UK or joining a related group.</p>
+                        <p>MILESTONE_DESCRIPTION_3 — an achievement, partnership, or campus recognition.</p>
                     </div>
                 </div>
 
@@ -250,7 +250,7 @@
                     <div class="timeline-content">
                         <span class="timeline-date">YEAR_OR_DATE_4</span>
                         <h3>MILESTONE_TITLE_4</h3>
-                        <p>MILESTONE_DESCRIPTION_4 — recent accomplishment or current involvement.</p>
+                        <p>MILESTONE_DESCRIPTION_4 — recent accomplishment or expansion of the organization.</p>
                     </div>
                 </div>
 
@@ -259,7 +259,7 @@
                     <div class="timeline-content">
                         <span class="timeline-date">Present</span>
                         <h3>MILESTONE_TITLE_5</h3>
-                        <p>MILESTONE_DESCRIPTION_5 — where they are now and what's next.</p>
+                        <p>MILESTONE_DESCRIPTION_5 — where the organization stands today and what's coming next.</p>
                     </div>
                 </div>
             </div>
@@ -268,20 +268,22 @@
 
     <!-- =====================================================================
          STATISTICS / DATA VISUALIZATION SECTION
-         Animated counters and visual stats about the hobby.
+         Animated counters and visual stats about the organization.
          CUSTOMIZE: Numbers, labels, and descriptions.
          ===================================================================== -->
     <section class="section stats" id="stats">
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <span class="section-label">By the Numbers</span>
-                <h2 class="section-title"><span class="highlight">HOBBY_NAME</span> at a Glance</h2>
+                <h2 class="section-title"><span class="highlight">ORG_NAME</span> at a Glance</h2>
             </div>
 
             <div class="stats-grid">
                 <!-- CUSTOMIZE: Each stat-card shows a number and label.
                      data-target = the number to count up to.
-                     data-suffix = text after the number (optional: +, %, etc.) -->
+                     data-suffix = text after the number (optional: +, %, etc.)
+                     Example org stats: active members, events per semester,
+                     community service hours, years active, etc. -->
 
                 <div class="stat-card animate-on-scroll">
                     <div class="stat-number" data-target="STAT_NUMBER_1" data-suffix="+">0</div>
@@ -308,48 +310,48 @@
                 </div>
             </div>
 
-            <!-- CUSTOMIZE: Optional — Skill/progress bars for visual flair -->
+            <!-- CUSTOMIZE: Optional — Progress bars showing organization focus areas -->
             <div class="skill-bars animate-on-scroll">
-                <h3 class="skills-heading">Core Skills</h3>
+                <h3 class="skills-heading">What We Focus On</h3>
 
-                <!-- CUSTOMIZE: Change skill names and data-percent values (0-100) -->
+                <!-- CUSTOMIZE: Change focus area names and data-percent values (0-100) -->
                 <div class="skill-bar">
                     <div class="skill-info">
-                        <span>SKILL_NAME_1</span>
-                        <span class="skill-percent">SKILL_PERCENT_1%</span>
+                        <span>FOCUS_AREA_1</span>
+                        <span class="skill-percent">FOCUS_PERCENT_1%</span>
                     </div>
                     <div class="skill-track">
-                        <div class="skill-fill" data-percent="SKILL_PERCENT_1"></div>
+                        <div class="skill-fill" data-percent="FOCUS_PERCENT_1"></div>
                     </div>
                 </div>
 
                 <div class="skill-bar">
                     <div class="skill-info">
-                        <span>SKILL_NAME_2</span>
-                        <span class="skill-percent">SKILL_PERCENT_2%</span>
+                        <span>FOCUS_AREA_2</span>
+                        <span class="skill-percent">FOCUS_PERCENT_2%</span>
                     </div>
                     <div class="skill-track">
-                        <div class="skill-fill" data-percent="SKILL_PERCENT_2"></div>
+                        <div class="skill-fill" data-percent="FOCUS_PERCENT_2"></div>
                     </div>
                 </div>
 
                 <div class="skill-bar">
                     <div class="skill-info">
-                        <span>SKILL_NAME_3</span>
-                        <span class="skill-percent">SKILL_PERCENT_3%</span>
+                        <span>FOCUS_AREA_3</span>
+                        <span class="skill-percent">FOCUS_PERCENT_3%</span>
                     </div>
                     <div class="skill-track">
-                        <div class="skill-fill" data-percent="SKILL_PERCENT_3"></div>
+                        <div class="skill-fill" data-percent="FOCUS_PERCENT_3"></div>
                     </div>
                 </div>
 
                 <div class="skill-bar">
                     <div class="skill-info">
-                        <span>SKILL_NAME_4</span>
-                        <span class="skill-percent">SKILL_PERCENT_4%</span>
+                        <span>FOCUS_AREA_4</span>
+                        <span class="skill-percent">FOCUS_PERCENT_4%</span>
                     </div>
                     <div class="skill-track">
-                        <div class="skill-fill" data-percent="SKILL_PERCENT_4"></div>
+                        <div class="skill-fill" data-percent="FOCUS_PERCENT_4"></div>
                     </div>
                 </div>
             </div>
@@ -359,7 +361,7 @@
     <!-- =====================================================================
          GALLERY SECTION
          Image gallery with lightbox-style hover effects.
-         CUSTOMIZE: Replace placeholder images with real photos.
+         CUSTOMIZE: Replace placeholder images with real event/activity photos.
          ===================================================================== -->
     <section class="section gallery" id="gallery">
         <div class="container">
@@ -368,7 +370,7 @@
                 <h2 class="section-title"><span class="highlight">Gallery</span></h2>
                 <p class="section-subtitle">
                     <!-- CUSTOMIZE: Brief description of what the gallery shows -->
-                    Snapshots of PERSON_NAME's journey with HOBBY_NAME.
+                    Highlights from ORG_NAME events, meetings, and HOBBY_NAME activities.
                 </p>
             </div>
 
@@ -442,67 +444,68 @@
     </section>
 
     <!-- =====================================================================
-         QUOTE / HIGHLIGHT SECTION
-         A standout quote from the person about their hobby.
-         CUSTOMIZE: Quote text.
+         QUOTE / MISSION STATEMENT SECTION
+         A standout quote or mission statement from the organization.
+         CUSTOMIZE: Quote text and attribution.
          ===================================================================== -->
     <section class="section quote-section">
         <div class="container">
             <div class="quote-block animate-on-scroll">
                 <div class="quote-mark">&ldquo;</div>
                 <blockquote>
-                    <!-- CUSTOMIZE: A meaningful quote from the person about their hobby/passion -->
-                    PERSON_QUOTE — a meaningful statement about what HOBBY_NAME means to them
-                    and how it connects to their experience at the University of Kentucky.
+                    <!-- CUSTOMIZE: A mission statement, motto, or quote from a member/leader -->
+                    ORG_QUOTE — a meaningful statement about what HOBBY_NAME means to the organization
+                    and the community it has built at the University of Kentucky.
                 </blockquote>
                 <cite>
-                    <!-- CUSTOMIZE: Attribution -->
-                    &mdash; PERSON_NAME, MAJOR_OR_ROLE
+                    <!-- CUSTOMIZE: Attribution — could be a founder, president, or the org motto -->
+                    &mdash; QUOTE_ATTRIBUTION, ORG_ROLE
                 </cite>
             </div>
         </div>
     </section>
 
     <!-- =====================================================================
-         CONTACT / SOCIAL LINKS SECTION
-         Contact info and social media links.
+         CONTACT / JOIN US SECTION
+         Contact info, social media, and how to get involved.
          CUSTOMIZE: Email, social URLs, and link labels.
          ===================================================================== -->
     <section class="section contact" id="contact">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <span class="section-label">Get in Touch</span>
-                <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+                <span class="section-label">Get Involved</span>
+                <h2 class="section-title"><span class="highlight">Join</span> Our Community</h2>
                 <p class="section-subtitle">
                     <!-- CUSTOMIZE: Contact intro text -->
-                    Interested in HOBBY_NAME or want to learn more? Reach out!
+                    Interested in HOBBY_NAME? All UK students are welcome — no experience necessary!
                 </p>
             </div>
 
             <div class="contact-grid animate-on-scroll">
-                <!-- CUSTOMIZE: Email address -->
-                <a href="mailto:PERSON_EMAIL@uky.edu" class="contact-card">
+                <!-- CUSTOMIZE: Organization email address -->
+                <a href="mailto:ORG_EMAIL@uky.edu" class="contact-card">
                     <div class="contact-icon">✉️</div>
                     <h3>Email</h3>
-                    <p>PERSON_EMAIL@uky.edu</p>
+                    <p>ORG_EMAIL@uky.edu</p>
                 </a>
 
                 <!-- CUSTOMIZE: Social links — add, remove, or change as needed -->
-                <a href="LINKEDIN_URL" class="contact-card" target="_blank" rel="noopener noreferrer">
-                    <div class="contact-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <p>Connect with me</p>
-                </a>
-
                 <a href="INSTAGRAM_URL" class="contact-card" target="_blank" rel="noopener noreferrer">
                     <div class="contact-icon">📸</div>
                     <h3>Instagram</h3>
                     <p>@INSTAGRAM_HANDLE</p>
                 </a>
 
+                <a href="SIGNUP_OR_LINKTREE_URL" class="contact-card" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-icon">📋</div>
+                    <!-- CUSTOMIZE: Could be a sign-up form, BBNvolved page, Linktree, etc. -->
+                    <h3>SIGNUP_PLATFORM</h3>
+                    <p>Sign up to join</p>
+                </a>
+
                 <a href="ADDITIONAL_LINK_URL" class="contact-card" target="_blank" rel="noopener noreferrer">
                     <div class="contact-icon">🔗</div>
-                    <!-- CUSTOMIZE: Could be Twitter, YouTube, personal website, etc. -->
+                    <!-- CUSTOMIZE: Could be GroupMe, Discord, Twitter, YouTube, etc. -->
                     <h3>PLATFORM_NAME</h3>
                     <p>PLATFORM_HANDLE</p>
                 </a>
@@ -519,14 +522,14 @@
                 <div class="footer-brand">
                     <!-- CUSTOMIZE: Footer text -->
                     <span class="footer-logo">UK</span>
-                    <p>PERSON_NAME &bull; University of Kentucky</p>
+                    <p>ORG_NAME &bull; University of Kentucky</p>
                 </div>
                 <p class="footer-tagline">
                     <!-- CUSTOMIZE: Footer tagline -->
                     See Blue. &trade;
                 </p>
                 <p class="footer-copy">
-                    &copy; 2026 University of Kentucky &bull; Student Success Showcase
+                    &copy; 2026 University of Kentucky &bull; Student Organization Showcase
                 </p>
             </div>
         </div>
