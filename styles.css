@@ -541,25 +541,26 @@ a:hover {
 
 .hero-video-placeholder,
 .hero-video video {
-    width: 320px;
-    height: 180px;
+    width: 480px;
+    height: 480px;
     margin: 0 auto;
     border-radius: var(--border-radius);
-    object-fit: cover;
+    object-fit: contain;
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
 
 .hero-video video {
-    width: 320px;
-    height: 180px;
+    width: 480px;
+    height: 480px;
     display: block;
+    object-fit: contain;
 }
 
 .hero-video-placeholder .placeholder-text,
