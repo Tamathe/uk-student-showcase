@@ -786,8 +786,7 @@ a:hover {
     margin: 0 auto;
 }
 
-.photo-placeholder,
-.photo-frame img {
+.photo-placeholder {
     width: 100%;
     aspect-ratio: 3 / 4;
     object-fit: cover;
@@ -796,6 +795,16 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.photo-frame img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    display: block;
     position: relative;
     z-index: 1;
 }
