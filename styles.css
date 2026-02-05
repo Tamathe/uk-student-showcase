@@ -1,15 +1,15 @@
 /* ==========================================================================
-   UK STUDENT SHOWCASE — STYLES
-   University of Kentucky Branded Single-Page Template
+   PATRICIA'S MEDICAL EDUCATION CLUB — STYLES
+   Texas Tech University Branded Single-Page Template
 
    BRANDING REFERENCE:
-     Primary Mustard:              #C8A415
+     Texas Tech Red:              #CC0000
      White:                       #FFFFFF
-     Black:                       #2C2A29
+     Black:                       #000000
 
    FONTS:
-     Headings: "Oswald" (web proxy for UK's Alt Trade Gothic condensed)
-     Body:     "Inter"  (web proxy for UK's Usual typeface)
+     Headings: "Oswald" (bold condensed for impact)
+     Body:     "Inter"  (clean, readable body text)
 
    CUSTOMIZATION:
      - Colors are defined as CSS custom properties in :root below.
@@ -22,19 +22,19 @@
    CSS CUSTOM PROPERTIES (VARIABLES)
    -------------------------------- */
 :root {
-    /* === Brand Colors (Mustard) === */
-    --uk-blue:        #C8A415;
-    --uk-blue-dark:   #9B7E0E;
-    --uk-blue-light:  #DAB82A;
+    /* === Brand Colors (Texas Tech Red & Black) === */
+    --uk-blue:        #CC0000;
+    --uk-blue-dark:   #990000;
+    --uk-blue-light:  #E63333;
     --uk-white:       #FFFFFF;
-    --uk-black:       #2C2A29;
+    --uk-black:       #000000;
 
-    /* === Extended Palette (derived from mustard) === */
-    --uk-blue-10:     #faf5e3;   /* very light tint    */
-    --uk-blue-20:     #f0e4b3;   /* light tint         */
-    --uk-blue-30:     #d4bc5a;   /* medium tint        */
-    --uk-accent:      #E6B800;   /* golden accent      */
-    --uk-gold:        #B6985A;   /* subtle warm accent */
+    /* === Extended Palette (derived from Texas Tech Red) === */
+    --uk-blue-10:     #fce8e8;   /* very light tint    */
+    --uk-blue-20:     #f5b3b3;   /* light tint         */
+    --uk-blue-30:     #e66666;   /* medium tint        */
+    --uk-accent:      #FF1A1A;   /* bright red accent  */
+    --uk-gold:        #CC0000;   /* Texas Tech Red     */
 
     /* === Neutrals === */
     --gray-50:        #f8f9fc;
@@ -66,7 +66,7 @@
     /* === Glassmorphism === */
     --glass-bg:        rgba(255, 255, 255, 0.08);
     --glass-border:    rgba(255, 255, 255, 0.15);
-    --glass-shadow:    0 8px 32px rgba(200, 164, 21, 0.12);
+    --glass-shadow:    0 8px 32px rgba(204, 0, 0, 0.12);
 }
 
 /* --------------------------------
@@ -230,7 +230,7 @@ a:hover {
     width: 40px;
     height: 40px;
     background: var(--uk-blue);
-    color: var(--uk-black);
+    color: var(--uk-white);
     border-radius: var(--border-radius-sm);
     font-size: 0.9rem;
     font-weight: 800;
@@ -239,7 +239,7 @@ a:hover {
 
 .navbar.scrolled .logo-icon {
     background: var(--uk-blue);
-    color: var(--uk-black);
+    color: var(--uk-white);
 }
 
 .nav-links {
@@ -281,7 +281,7 @@ a:hover {
 
 .navbar.scrolled .nav-cta {
     background: var(--uk-blue) !important;
-    color: var(--uk-black) !important;
+    color: var(--uk-white) !important;
     border-color: var(--uk-blue) !important;
 }
 
@@ -358,7 +358,7 @@ a:hover {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse at 30% 50%, rgba(200, 164, 21, 0.3) 0%, transparent 70%),
+        radial-gradient(ellipse at 30% 50%, rgba(204, 0, 0, 0.3) 0%, transparent 70%),
         radial-gradient(ellipse at 70% 80%, rgba(0, 0, 0, 0.4) 0%, transparent 70%);
     /* Subtle pattern overlay */
     background-size: cover;
@@ -523,13 +523,15 @@ a:hover {
     transform: scale(1.08);
 }
 
-.hero-logo-placeholder .placeholder-text {
+.hero-logo-placeholder .placeholder-text,
+.hero-logo-placeholder span {
     font-family: var(--font-heading);
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     line-height: 1.4;
 }
 
@@ -560,13 +562,12 @@ a:hover {
     display: block;
 }
 
-.hero-video-placeholder .placeholder-text {
+.hero-video-placeholder .placeholder-text,
+.hero-video-placeholder span {
     font-family: var(--font-heading);
-    font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.5);
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.6);
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     line-height: 1.4;
 }
 
@@ -588,7 +589,7 @@ a:hover {
     border-radius: var(--border-radius);
     border: 1px solid var(--gray-200);
     padding: 3rem;
-    box-shadow: 0 10px 40px rgba(200, 164, 21, 0.08);
+    box-shadow: 0 10px 40px rgba(204, 0, 0, 0.08);
     position: relative;
     overflow: hidden;
 }
@@ -614,7 +615,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 25px rgba(200, 164, 21, 0.12);
+    box-shadow: 0 8px 25px rgba(204, 0, 0, 0.12);
 }
 
 .president-photo-placeholder .placeholder-text {
@@ -842,7 +843,7 @@ a:hover {
 
 .fact-item:hover {
     border-color: var(--uk-blue-20);
-    box-shadow: 0 4px 15px rgba(200, 164, 21, 0.08);
+    box-shadow: 0 4px 15px rgba(204, 0, 0, 0.08);
     transform: translateY(-2px);
 }
 
@@ -899,7 +900,7 @@ a:hover {
 
 .hobby-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(200, 164, 21, 0.12);
+    box-shadow: 0 20px 40px rgba(204, 0, 0, 0.12);
     border-color: var(--uk-blue-20);
 }
 
@@ -993,7 +994,7 @@ a:hover {
 
 .timeline-item:hover .timeline-marker {
     transform: scale(1.3);
-    box-shadow: 0 0 0 5px var(--uk-blue-20), 0 0 20px rgba(200, 164, 21, 0.3);
+    box-shadow: 0 0 0 5px var(--uk-blue-20), 0 0 20px rgba(204, 0, 0, 0.3);
 }
 
 .timeline-content {
@@ -1006,7 +1007,7 @@ a:hover {
 }
 
 .timeline-item:hover .timeline-content {
-    box-shadow: 0 8px 30px rgba(200, 164, 21, 0.1);
+    box-shadow: 0 8px 30px rgba(204, 0, 0, 0.1);
     border-color: var(--uk-blue-20);
 }
 
@@ -1045,7 +1046,7 @@ a:hover {
    ================================ */
 .stats {
     background: linear-gradient(135deg, var(--uk-blue-dark) 0%, var(--uk-blue) 50%, var(--uk-blue-light) 100%);
-    color: var(--uk-black);
+    color: var(--uk-white);
     position: relative;
     overflow: hidden;
 }
@@ -1075,16 +1076,16 @@ a:hover {
 }
 
 .stats .section-label {
-    background: rgba(255, 255, 255, 0.25);
-    color: var(--uk-black);
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--uk-white);
 }
 
 .stats .section-title {
-    color: var(--uk-black);
+    color: var(--uk-white);
 }
 
 .stats .highlight {
-    color: var(--uk-white);
+    color: var(--uk-blue-20);
 }
 
 .stats-grid {
@@ -1097,15 +1098,15 @@ a:hover {
 .stat-card {
     text-align: center;
     padding: 2.5rem 1.5rem;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: var(--border-radius);
     transition: all var(--transition-medium);
 }
 
 .stat-card:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.14);
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
@@ -1234,7 +1235,7 @@ a:hover {
 .gallery-caption {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(200, 164, 21, 0.9) 0%, transparent 60%);
+    background: linear-gradient(to top, rgba(204, 0, 0, 0.9) 0%, transparent 60%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1333,7 +1334,7 @@ a:hover {
 
 .contact-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 15px 40px rgba(200, 164, 21, 0.12);
+    box-shadow: 0 15px 40px rgba(204, 0, 0, 0.12);
     border-color: var(--uk-blue);
     color: var(--gray-800);
 }
@@ -1399,7 +1400,7 @@ a:hover {
     width: 36px;
     height: 36px;
     background: var(--uk-blue);
-    color: var(--uk-black);
+    color: var(--uk-white);
     font-family: var(--font-heading);
     font-size: 0.85rem;
     font-weight: 800;
@@ -1522,7 +1523,7 @@ a:hover {
 
     .nav-cta {
         background: var(--uk-blue) !important;
-        color: var(--uk-black) !important;
+        color: var(--uk-white) !important;
         text-align: center;
         margin-top: 1rem;
         border-color: var(--uk-blue) !important;
